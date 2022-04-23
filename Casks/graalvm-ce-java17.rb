@@ -5,7 +5,7 @@ cask "graalvm-ce-java17" do
     version "22.0.0.2"
     sha256 "d54af9d1f4d0d351827395a714ed84d2489b023b74a9c13a431cc9d31d1e8f9a"
   else
-    version "22.2.0-dev"
+    version "22.2.0-dev-20220421_2218"
     sha256 "d0921ea6724c05bb47fdf1acca4a9e00848a5c759ffe68bcc12179113db119ae"
   end
 
