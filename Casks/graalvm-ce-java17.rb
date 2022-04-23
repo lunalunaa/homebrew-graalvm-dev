@@ -6,7 +6,7 @@ cask "graalvm-ce-java17" do
     sha256 "d54af9d1f4d0d351827395a714ed84d2489b023b74a9c13a431cc9d31d1e8f9a"
   else
     version "22.2.0-dev"
-    sha256 "1dbb0e0b9c85391ea6f1a0bd95ae252a396152d83e3a0e79cffd988144259e68"
+    sha256 "d0921ea6724c05bb47fdf1acca4a9e00848a5c759ffe68bcc12179113db119ae"
   end
 
   jvms_dir = "/Library/Java/JavaVirtualMachines".freeze
@@ -16,7 +16,7 @@ cask "graalvm-ce-java17" do
   if Hardware::CPU.intel?
     url "https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-#{version}/#{cask}-darwin-#{arch}-#{version}.tar.gz"
   else # The following branch can be folded as soon there is a GraalVM release with M1 support
-    url "https://github.com/graalvm/graalvm-ce-dev-builds/releases/download/22.2.0-dev-20220415_1945/#{cask}-darwin-#{arch}-dev.tar.gz"
+    url "https://github.com/graalvm/graalvm-ce-dev-builds/releases/download/22.2.0-dev-20220421_2218/#{cask}-darwin-#{arch}-dev.tar.gz"
   end
   appcast "https://github.com/oracle/graal/releases.atom"
   name "GraalVM Community Edition (Java 17)"
