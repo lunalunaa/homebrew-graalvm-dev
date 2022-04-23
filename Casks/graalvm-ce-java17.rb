@@ -16,7 +16,7 @@ cask "graalvm-ce-java17" do
   if Hardware::CPU.intel?
     url "https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-#{version}/#{cask}-darwin-#{arch}-#{version}.tar.gz"
   else # The following branch can be folded as soon there is a GraalVM release with M1 support
-    url "https://github.com/graalvm/graalvm-ce-dev-builds/releases/download/22.2.0-dev-20220421_2218/#{cask}-darwin-#{arch}-dev.tar.gz"
+    url "https://github.com/graalvm/graalvm-ce-dev-builds/releases/latest/download/#{cask}-darwin-#{arch}-dev.tar.gz"
   end
   appcast "https://github.com/oracle/graal/releases.atom"
   name "GraalVM Community Edition (Java 17)"
